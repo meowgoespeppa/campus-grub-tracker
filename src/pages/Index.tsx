@@ -237,7 +237,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>© 2024 Campus Bites. Built for Walchand College of Engineering.</p>
+            <p>© 2025 Campus Bites. Built for BMS College of Engineering.</p>
           </div>
         </div>
       </footer>
