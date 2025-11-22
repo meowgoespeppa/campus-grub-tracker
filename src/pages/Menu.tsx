@@ -251,29 +251,3 @@ const MenuItemCard = ({ item, quantity, onAdd, onRemove }: MenuItemCardProps) =>
 
 export default Menu;
 
-import { useEffect, useState } from "react";
-
-function Home() {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api/items")
-      .then(res => res.json())
-      .then(data => setItems(data));
-  }, []);
-
-  return (
-    <div>
-      <h1>Menu Items</h1>
-      {items.map(item => (
-        <div key={item._id}>
-          <h3>{item.name}</h3>
-          <p>Price: ₹{item.price}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default Home;
-
